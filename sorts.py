@@ -8,34 +8,31 @@ def selection_sort(list):
 
         # Find the minimum element in remaining
         # unsorted list
-        min_idx = i
+        min = i
         for j in range(i+1, len(list)):
-            if list[min_idx] > list[j]:
-                min_idx = j
+            if list[min] > list[j]:
+                min = j
             count +=1
         # Swap the found minimum element with
         # the first element
-        list[i], list[min_idx] = list[min_idx], list[i]
+        list[i], list[min] = list[min], list[i]
 
     return count
 
 def insertion_sort(list):
     count = 0
-    # Traverse through 1 to len(list)
+
+    #start at 1
     for i in range(1, len(list)):
 
-        key = list[i]
-
-        # Move elements of list[0..i-1], that are
-        # greater than key, to one position ahead
-        # of their current position
-        j = i-1
-        while j >= 0 and key < list[j] :
-            list[j+1] = list[j]
-            j -= 1
+        #if i is less than last element
+        #terminate after comparing to first index
+        while list[i] < list[i-1] and i > 0:
+            #Swap
+            list[i], list[i-1]  = list[i-1], list[i]
+            i-=1
+            #increment count
             count+=1
-        list[j+1] = key
-
     return count
 
 def main():
