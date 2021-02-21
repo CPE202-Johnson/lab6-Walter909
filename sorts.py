@@ -24,7 +24,7 @@ def insertion_sort(list):
 
     #start at 1
     for i in range(1, len(list)):
-
+        count+=1
         #if i is less than last element
         #terminate after comparing to first index
         while list[i] < list[i-1] and i > 0:

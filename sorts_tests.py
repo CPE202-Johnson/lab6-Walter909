@@ -13,7 +13,7 @@ class TestLab4(unittest.TestCase):
         nums = [23, 10, 15, 13, 0]
         comps = insertion_sort(nums)
         self.assertEqual(nums, [0, 10, 13, 15, 23])
-        self.assertEqual(comps, 8)
+        self.assertEqual(comps, 12)
 
 if __name__ == '__main__': 
     unittest.main()
