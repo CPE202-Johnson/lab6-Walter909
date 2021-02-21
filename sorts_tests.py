@@ -10,10 +10,10 @@ class TestLab4(unittest.TestCase):
         self.assertEqual(nums, [10, 23])
 
     def test_insertion_sort(self):
-        nums = [23, 10, 15]
+        nums = [23, 10, 15, 13]
         comps = insertion_sort(nums)
-        self.assertEqual(comps, 2)
-        self.assertEqual(nums, [10, 15, 23])
+        self.assertEqual(comps, 3)
+        self.assertEqual(nums, [10, 13, 15, 23])
 
 
 if __name__ == '__main__': 

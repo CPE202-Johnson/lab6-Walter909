@@ -3,11 +3,11 @@ import time
 
 def selection_sort(list):
     count = 0
-    # Traverse through all array elements
+    # Traverse through all list elements
     for i in range(len(list)):
 
         # Find the minimum element in remaining
-        # unsorted array
+        # unsorted list
         min_idx = i
         for j in range(i+1, len(list)):
             if list[min_idx] > list[j]:
@@ -21,12 +21,12 @@ def selection_sort(list):
 
 def insertion_sort(list):
     count = 0
-    # Traverse through 1 to len(arr)
+    # Traverse through 1 to len(list)
     for i in range(1, len(list)):
 
         key = list[i]
 
-        # Move elements of arr[0..i-1], that are
+        # Move elements of list[0..i-1], that are
         # greater than key, to one position ahead
         # of their current position
         j = i-1
