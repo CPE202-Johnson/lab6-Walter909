@@ -12,12 +12,12 @@ def selection_sort(list):
         for j in range(i+1, len(list)):
             if list[min_idx] > list[j]:
                 min_idx = j
-
+            count +=1
         # Swap the found minimum element with
         # the first element
         list[i], list[min_idx] = list[min_idx], list[i]
-        count +=1
-        return count
+
+    return count
 
 def insertion_sort(list):
     count = 0
