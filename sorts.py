@@ -30,11 +30,12 @@ def insertion_sort(list):
         # greater than key, to one position ahead
         # of their current position
         j = i-1
-        while j >=0 and key < list[j] :
+        while j >= 0 and key < list[j] :
             list[j+1] = list[j]
             j -= 1
+            count+=1
         list[j+1] = key
-        count+=1
+
     return count
 
 def main():

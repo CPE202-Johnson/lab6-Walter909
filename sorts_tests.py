@@ -12,7 +12,7 @@ class TestLab4(unittest.TestCase):
     def test_insertion_sort(self):
         nums = [23, 10, 15, 13]
         comps = insertion_sort(nums)
-        self.assertEqual(comps, 3)
+        self.assertEqual(comps, 4)
         self.assertEqual(nums, [10, 13, 15, 23])
 
 
